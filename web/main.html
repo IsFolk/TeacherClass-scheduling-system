@@ -1,0 +1,318 @@
+<!doctype html>
+<html lang="zh-tw">
+  <head>
+  	<title>分發系統</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,700' rel='stylesheet' type='text/css'>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <link rel="stylesheet" href="css/style.css">
+
+    <script src="/eel.js"></script>
+    <script src="func.js"></script>
+
+    <style>
+      /* table tr:not(:first-child){
+        cursor: pointer;transition: all .25s ease-in-out;
+      }
+      table tr:not(:first-child)hover{background-color: #ddd;} */
+
+      .button {
+        background-color: #68c1d1;
+        border-color: black;
+        color: white;
+        padding: 10px 32px;
+        text-decoration: none;
+        margin: 4px 2px;
+        cursor: pointer;
+        border-radius: 5px;
+      }
+
+      .button:hover {opacity: 0.5;}
+
+      .button:active {
+        opacity: 1;
+        background-color:	#3c88b4;
+      }
+    </style>
+	</head>
+	<body>
+
+	<section class="ftco-section">
+		<div class="container">
+			<div class="row justify-content-center">
+				<div class="col-md-6 text-center mb-5">
+					<h2 class="heading-section">選擇時段</h2>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12">
+					<div class="table-wrap">
+						<table id = 'table' class="table table-bordered text-center">
+              <thead>
+                <tr>
+                  <th></th>
+                  <th>一</th>
+                  <th>二</th>
+                  <th>三</th>
+                  <th>四</th>
+                  <th>五</th>
+                  <th>六</th>
+                  <th>日</th>
+                </tr>
+              </thead>
+              <tbody>
+
+                <tr>
+                  <td class="text-center"><strong>1</strong> <br></td>
+                  <td><input type="checkbox" id = "Mon1" style="width:40px; height: 40px;">
+                    <!-- <i class="fa fa-close"></i> -->
+                  </td>
+                  <td><input id = "Tue1" type="checkbox" style="width:40px; height: 40px;"></td>
+                  <td><input id = "Wed1" type="checkbox" style="width:40px; height: 40px;"></i></td>
+                  <td><input id = "Thu1" type="checkbox" style="width:40px; height: 40px;"></td>
+                  <td><input id = "Fri1" type="checkbox" style="width:40px; height: 40px;"></td>
+                  <td><input id = "Sat1" type="checkbox" style="width:40px; height: 40px;"></i></td>
+                  <td><input id = "Sun1" type="checkbox" style="width:40px; height: 40px;"></td>
+                </tr>
+
+                <tr>
+                  <td class="text-center"><strong>2</strong> <br></td>
+                  <td><input id = "Mon2" type="checkbox" style="width:40px; height: 40px;"></td>
+                  <td><input id = "Tue2" type="checkbox" style="width:40px; height: 40px;"></td>
+                  <td><input id = "Wed2" type="checkbox" style="width:40px; height: 40px;"></td>
+                  <td><input id = "Thu2" type="checkbox" style="width:40px; height: 40px;"></td>
+                  <td><input id = "Fri2" type="checkbox" style="width:40px; height: 40px;"></td>
+                  <td><input id = "Sat2" type="checkbox" style="width:40px; height: 40px;"></td>
+                  <td><input id = "Sun2" type="checkbox" style="width:40px; height: 40px;"></td>
+                </tr>
+                
+                <tr>
+                  <td class="text-center"><strong>3</strong> <br></td>
+                  <td><input id = "Mon3" type="checkbox" style="width:40px; height: 40px;"></td>
+                  <td><input id = "Tue3" type="checkbox" style="width:40px; height: 40px;"></td>
+                  <td><input id = "Wed3" type="checkbox" style="width:40px; height: 40px;"></td>
+                  <td><input id = "Thu3" type="checkbox" style="width:40px; height: 40px;"></td>
+                  <td><input id = "Fri3" type="checkbox" style="width:40px; height: 40px;"></td>
+                  <td><input id = "Sat3" type="checkbox" style="width:40px; height: 40px;"></td>
+                  <td><input id = "Sun3" type="checkbox" style="width:40px; height: 40px;"></td>
+                </tr>
+
+                <tr>
+                  <td class="text-center"><strong>4</strong> <br></td>
+                  <td><input id = "Mon4" type="checkbox" style="width:40px; height: 40px;"></td>
+                  <td><input id = "Tue4" type="checkbox" style="width:40px; height: 40px;"></td>
+                  <td><input id = "Wed4" type="checkbox" style="width:40px; height: 40px;"></td>
+                  <td><input id = "Thu4" type="checkbox" style="width:40px; height: 40px;"></td>
+                  <td><input id = "Fri4" type="checkbox" style="width:40px; height: 40px;"></td>
+                  <td><input id = "Sat4" type="checkbox" style="width:40px; height: 40px;"></td>
+                  <td><input id = "Sun4" type="checkbox" style="width:40px; height: 40px;"></td>
+                </tr>
+
+                <tr>
+                  <td class="text-center"><strong>5</strong> <br></td>
+                  <td><input id = "Mon5" type="checkbox" style="width:40px; height: 40px;"></td>
+                  <td><input id = "Tue5" type="checkbox" style="width:40px; height: 40px;"></td>
+                  <td><input id = "Wed5" type="checkbox" style="width:40px; height: 40px;"></td>
+                  <td><input id = "Thu5" type="checkbox" style="width:40px; height: 40px;"></td>
+                  <td><input id = "Fri5" type="checkbox" style="width:40px; height: 40px;"></td>
+                  <td><input id = "Sat5" type="checkbox" style="width:40px; height: 40px;"></td>
+                  <td><input id = "Sun5" type="checkbox" style="width:40px; height: 40px;"></td>
+                </tr>
+
+                <tr>
+                  <td class="text-center"><strong>6</strong> <br></td>
+                  <td><input id = "Mon6" type="checkbox" style="width:40px; height: 40px;"></td>
+                  <td><input id = "Tue6" type="checkbox" style="width:40px; height: 40px;"></td>
+                  <td><input id = "Wed6" type="checkbox" style="width:40px; height: 40px;"></td>
+                  <td><input id = "Thu6" type="checkbox" style="width:40px; height: 40px;"></td>
+                  <td><input id = "Fri6" type="checkbox" style="width:40px; height: 40px;"></td>
+                  <td><input id = "Sat6" type="checkbox" style="width:40px; height: 40px;"></td>
+                  <td><input id = "Sun6" type="checkbox" style="width:40px; height: 40px;"></td>
+                </tr>
+
+                <tr>
+                  <td class="text-center"><strong>7</strong> <br></td>
+                  <td><input id = "Mon7" type="checkbox" style="width:40px; height: 40px;"></td>
+                  <td><input id = "Tue7" type="checkbox" style="width:40px; height: 40px;"></td>
+                  <td><input id = "Wed7" type="checkbox" style="width:40px; height: 40px;"></td>
+                  <td><input id = "Thu7" type="checkbox" style="width:40px; height: 40px;"></td>
+                  <td><input id = "Fri7" type="checkbox" style="width:40px; height: 40px;"></td>
+                  <td><input id = "Sat7" type="checkbox" style="width:40px; height: 40px;"></td>
+                  <td><input id = "Sun7" type="checkbox" style="width:40px; height: 40px;"></td>
+                </tr>
+                <tr>
+                  <td class="text-center"><strong>8</strong> <br></td>
+                  <td><input id = "Mon8" type="checkbox" style="width:40px; height: 40px;"></td>
+                  <td><input id = "Tue8" type="checkbox" style="width:40px; height: 40px;"></td>
+                  <td><input id = "Wed8" type="checkbox" style="width:40px; height: 40px;"></td>
+                  <td><input id = "Thu8" type="checkbox" style="width:40px; height: 40px;"></td>
+                  <td><input id = "Fri8" type="checkbox" style="width:40px; height: 40px;"></td>
+                  <td><input id = "Sat8" type="checkbox" style="width:40px; height: 40px;"></td>
+                  <td><input id = "Sun8" type="checkbox" style="width:40px; height: 40px;"></td>
+                </tr>
+
+                <tr>
+                  <td class="text-center"><strong>9</strong> <br></td>
+                  <td><input id = "Mon9" type="checkbox" style="width:40px; height: 40px;"></td>
+                  <td><input id = "Tue9" type="checkbox" style="width:40px; height: 40px;"></td>
+                  <td><input id = "Wed9" type="checkbox" style="width:40px; height: 40px;"></td>
+                  <td><input id = "Thu9" type="checkbox" style="width:40px; height: 40px;"></td>
+                  <td><input id = "Fri9" type="checkbox" style="width:40px; height: 40px;"></td>
+                  <td><input id = "Sat9" type="checkbox" style="width:40px; height: 40px;"></td>
+                  <td><input id = "Sun9" type="checkbox" style="width:40px; height: 40px;"></td>
+                </tr>
+
+                <tr>
+                  <td class="text-center"><strong>A</strong> <br></td>
+                  <td><input id = "MonA" type="checkbox" style="width:40px; height: 40px;"></td>
+                  <td><input id = "TueA" type="checkbox" style="width:40px; height: 40px;"></td>
+                  <td><input id = "WedA" type="checkbox" style="width:40px; height: 40px;"></td>
+                  <td><input id = "ThuA" type="checkbox" style="width:40px; height: 40px;"></td>
+                  <td><input id = "FriA" type="checkbox" style="width:40px; height: 40px;"></td>
+                  <td><input id = "SatA" type="checkbox" style="width:40px; height: 40px;"></td>
+                  <td><input id = "SunA" type="checkbox" style="width:40px; height: 40px;"></td>
+                </tr>
+
+                <tr>
+                  <td class="text-center"><strong>B</strong> <br></td>
+                  <td><input id = "MonB" type="checkbox" style="width:40px; height: 40px;"></td>
+                  <td><input id = "TueB" type="checkbox" style="width:40px; height: 40px;"></td>
+                  <td><input id = "WedB" type="checkbox" style="width:40px; height: 40px;"></td>
+                  <td><input id = "ThuB" type="checkbox" style="width:40px; height: 40px;"></td>
+                  <td><input id = "FriB" type="checkbox" style="width:40px; height: 40px;"></td>
+                  <td><input id = "SatB" type="checkbox" style="width:40px; height: 40px;"></td>
+                  <td><input id = "SunB" type="checkbox" style="width:40px; height: 40px;"></td>
+                </tr>
+
+                <tr>
+                  <td class="text-center"><strong>C</strong> <br></td>
+                  <td><input id = "MonC" type="checkbox" style="width:40px; height: 40px;"></td>
+                  <td><input id = "TueC" type="checkbox" style="width:40px; height: 40px;"></td>
+                  <td><input id = "WedC" type="checkbox" style="width:40px; height: 40px;"></td>
+                  <td><input id = "ThuC" type="checkbox" style="width:40px; height: 40px;"></td>
+                  <td><input id = "FriC" type="checkbox" style="width:40px; height: 40px;"></td>
+                  <td><input id = "SatC" type="checkbox" style="width:40px; height: 40px;"></td>
+                  <td><input id = "SunC" type="checkbox" style="width:40px; height: 40px;"></td>
+                </tr>
+
+                <tr>
+                  <td class="text-center"><strong>D</strong> <br></td>
+                  <td><input id = "MonD" type="checkbox" style="width:40px; height: 40px;"></td>
+                  <td><input id = "TueD" type="checkbox" style="width:40px; height: 40px;"></td>
+                  <td><input id = "WedD" type="checkbox" style="width:40px; height: 40px;"></td>
+                  <td><input id = "ThuD" type="checkbox" style="width:40px; height: 40px;"></td>
+                  <td><input id = "FriD" type="checkbox" style="width:40px; height: 40px;"></td>
+                  <td><input id = "SatD" type="checkbox" style="width:40px; height: 40px;"></td>
+                  <td><input id = "SunD" type="checkbox" style="width:40px; height: 40px;"></td>
+                </tr>
+
+                <tr>
+                  <td class="text-center"><strong>E</strong> <br></td>
+                  <td><input id = "MonE" type="checkbox" style="width:40px; height: 40px;"></td>
+                  <td><input id = "TueE" type="checkbox" style="width:40px; height: 40px;"></td>
+                  <td><input id = "WedE" type="checkbox" style="width:40px; height: 40px;"></td>
+                  <td><input id = "ThuE" type="checkbox" style="width:40px; height: 40px;"></td>
+                  <td><input id = "FriE" type="checkbox" style="width:40px; height: 40px;"></td>
+                  <td><input id = "SatE" type="checkbox" style="width:40px; height: 40px;"></td>
+                  <td><input id = "SunE" type="checkbox" style="width:40px; height: 40px;"></td>
+                </tr>
+
+                <tr>
+                  <td class="text-center"><strong>F</strong> <br></td>
+                  <td><input id = "MonF" type="checkbox" style="width:40px; height: 40px;"></td>
+                  <td><input id = "TueF" type="checkbox" style="width:40px; height: 40px;"></td>
+                  <td><input id = "WedF" type="checkbox" style="width:40px; height: 40px;"></td>
+                  <td><input id = "ThuF" type="checkbox" style="width:40px; height: 40px;"></td>
+                  <td><input id = "FriF" type="checkbox" style="width:40px; height: 40px;"></td>
+                  <td><input id = "SatF" type="checkbox" style="width:40px; height: 40px;"></td>
+                  <td><input id = "SunF" type="checkbox" style="width:40px; height: 40px;"></td>
+                </tr>
+              </tbody>
+              <!-- <tfoot>
+                <tr>
+                  <th><a href="#"><i class="fa fa-long-arrow-left"></i> September</a></th>
+                  <th></th>
+                  <th></th>
+                  <th></th>
+                  <th></th>
+                  <th></th>
+                  <th><a href="#">November <i class="fa fa-long-arrow-right"></i></a></th>
+                </tr>
+              </tfoot> -->
+            </table>
+					</div>
+          <center>
+              <!-- <button onclick="getoutcome()" class="button" >開始分發</button> -->
+              <button class = "button" id = 'confirm'>選擇時段</button>
+              <button class = 'button' id = "refresh">初始化全部</button>
+              <h1>時段<br></h1>
+              <input type="button" onclick="valueSender();" value="submit" />
+
+          </center>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<script src="js/jquery.min.js"></script>
+  <script src="js/popper.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/main.js"></script>
+  <script>
+    var limit = 4;
+    var choosedclass = [];
+    var count = 0;
+    var table = document.getElementById('table'), rIndex;
+    let btnConfirm = document.querySelector('#confirm');
+    let btnRefresh = document.querySelector('#refresh');
+    let btnSubmit = document.querySelector('#submit');
+    let result = document.querySelector('h1');
+
+    Array.prototype.containsArray = function(val) {
+      var hash = {};
+      for(var i=0; i<this.length; i++) {
+          hash[this[i]] = i;
+      }
+        return hash.hasOwnProperty(val);
+    };
+    
+
+    btnConfirm.addEventListener('click', () => {
+
+      let checkboxall = document.querySelectorAll('input[type="checkbox"]:checked');
+      var all = []
+
+      for(var checkbox of checkboxall){
+        all.push(checkbox.id);
+      }
+
+      if(choosedclass.containsArray(all)){
+        alert("此時段已被選擇");
+      }else{
+        choosedclass.push(all);
+        count += 1;
+        result.innerHTML += count + "." + all + "<br>";
+      }
+      console.log(choosedclass);
+    });
+
+    btnRefresh.addEventListener('click', () => {
+      choosedclass = [];
+      result.innerHTML = "時段" + "<br>";
+      count = 0;
+      console.log(choosedclass);
+    });
+
+    function valueSender(){
+      sessionStorage.setItem("ALL", JSON.stringify(choosedclass));
+      window.location.href = "confirm.html";
+    };
+  </script>
+
+	</body>
+</html>
+

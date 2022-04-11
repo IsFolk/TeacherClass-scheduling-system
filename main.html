@@ -1,0 +1,257 @@
+<!doctype html>
+<html lang="zh-tw">
+  <head>
+  	<title>分發系統</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,700' rel='stylesheet' type='text/css'>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <link rel="stylesheet" href="css/style.css">
+
+    <script src="/eel.js"></script>
+    <script src="func.js"></script>
+
+    <style>
+      .button {
+        background-color: #68c1d1;
+        border-color: black;
+        color: white;
+        padding: 10px 32px;
+        text-decoration: none;
+        margin: 4px 2px;
+        cursor: pointer;
+        border-radius: 5px;
+      }
+
+      .button:hover {opacity: 0.5;}
+
+      .button:active {
+        opacity: 1;
+        background-color:	#3c88b4;
+      }
+    </style>
+	</head>
+	<body>
+	<section class="ftco-section">
+		<div class="container">
+			<div class="row justify-content-center">
+				<div class="col-md-6 text-center mb-5">
+					<h2 class="heading-section">選擇時段</h2>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12">
+					<div class="table-wrap">
+						<table class="table table-bordered text-center">
+              <thead>
+                <tr>
+                  <th></th>
+                  <th>一</th>
+                  <th>二</th>
+                  <th>三</th>
+                  <th>四</th>
+                  <th>五</th>
+                  <th>六</th>
+                  <th>日</th>
+                </tr>
+              </thead>
+              <tbody>
+
+                <tr>
+                  <td class="text-center"><strong>1</strong> <br></td>
+                  <td  onclick="getoutcome()">
+                    <!-- <i class="fa fa-close"></i> -->
+                  </td>
+                  <td><i class="fa fa-close" onclick="Tues12choose()"></i></td>
+                  <td><i class="fa fa-close" onclick="Wed12choose()"></i></td>
+                  <td><i class="fa fa-close" onclick="Thur12choose()"></i></td>
+                  <td><p class = "Fri12" onclick="Fri12choose()"></p></td>
+                  <td><i class="fa fa-close"onclick="Wed12choose()"></i></td>
+                  <td><i class="fa fa-close"></i></td>
+                </tr>
+
+                <tr>
+                  <td class="text-center"><strong>2</strong> <br></td>
+                  <td><i class="fa fa-close"></i></td>
+                  <td><i class="fa fa-close"></i></td>
+                  <td><i class="fa fa-close"></i></td>
+                  <td><i class="fa fa-close"></i></td>
+                  <td><p class = "Fri12"></p></td>
+                  <td><i class="fa fa-close"></i></td>
+                  <td><i class="fa fa-close"></i></td>
+                </tr>
+                
+                <tr>
+                  <td class="text-center"><strong>3</strong> <br></td>
+                  <td><p class = "Mon34"></p></td>
+                  <td><i class="fa fa-close"></i></td>
+                  <td><p class = "Wed34"></p></td>
+                  <td></td>
+                  <td><p class = "Fri34"></p></td>
+                  <td><i class="fa fa-close"></i></td>
+                  <td><i class="fa fa-close"></i></td>
+                </tr>
+
+                <tr>
+                  <td class="text-center"><strong>4</strong> <br></td>
+                  <td><p class = "Mon34"></p></td>
+                  <td><i class="fa fa-close"></i></td>
+                  <td><p class = "Wed34"></p></td>
+                  <td></td>
+                  <td><p class = "Fri34"></p></td>
+                  <td><i class="fa fa-close"></i></td>
+                  <td><i class="fa fa-close"></i></td>
+                </tr>
+
+                <tr>
+                  <td class="text-center"><strong>5</strong> <br></td>
+                  <td><i class="fa fa-close"></i></td>
+                  <td><i class="fa fa-close"></i></td>
+                  <td><p class = "Wed56"></p></td>
+                  <td><i class="fa fa-close"></i></td>
+                  <td><i class="fa fa-close"></i></td>
+                  <td><i class="fa fa-close"></i></td>
+                  <td><i class="fa fa-close"></i></td>
+                </tr>
+
+                <tr>
+                  <td class="text-center"><strong>6</strong> <br></td>
+                  <td><i class="fa fa-close"></i></td>
+                  <td><i class="fa fa-close"></i></td>
+                  <td><p class = "Wed56"></p></td>
+                  <td><i class="fa fa-close"></i></td>
+                  <td><i class="fa fa-close"></i></td>
+                  <td><i class="fa fa-close"></i></td>
+                  <td><i class="fa fa-close"></i></td>
+                </tr>
+
+                <tr>
+                  <td class="text-center"><strong>7</strong> <br></td>
+                  <td><p class = "Mon78"></p></td>
+                  <td><i class="fa fa-close"></i></td>
+                  <td><p class = "Wed78"></p></td>
+                  <td><i class="fa fa-close"></i></td>
+                  <td><i class="fa fa-close"></i></td>
+                  <td><i class="fa fa-close"></i></td>
+                  <td><i class="fa fa-close"></i></td>
+                </tr>
+                <tr>
+                  <td class="text-center"><strong>8</strong> <br></td>
+                  <td><p class = "Mon78"></p></td>
+                  <td><i class="fa fa-close"></i></td>
+                  <td><p class = "Wed78"></p></td>
+                  <td><i class="fa fa-close"></i></td>
+                  <td><i class="fa fa-close"></i></td>
+                  <td><i class="fa fa-close"></i></td>
+                  <td><i class="fa fa-close"></i></td>
+                </tr>
+
+                <tr>
+                  <td class="text-center"><strong>9</strong> <br></td>
+                  <td><i class="fa fa-close"></i></td>
+                  <td><i class="fa fa-close"></i></td>
+                  <td><i class="fa fa-close"></i></td>
+                  <td><i class="fa fa-close"></i></td>
+                  <td><i class="fa fa-close"></i></td>
+                  <td><i class="fa fa-close"></i></td>
+                  <td><i class="fa fa-close"></i></td>
+                </tr>
+
+                <tr>
+                  <td class="text-center"><strong>A</strong> <br></td>
+                  <td><i class="fa fa-close"></i></td>
+                  <td><i class="fa fa-close"></i></td>
+                  <td><i class="fa fa-close"></i></td>
+                  <td><i class="fa fa-close"></i></td>
+                  <td><i class="fa fa-close"></i></td>
+                  <td><i class="fa fa-close"></i></td>
+                  <td><i class="fa fa-close"></i></td>
+                </tr>
+
+                <tr>
+                  <td class="text-center"><strong>B</strong> <br></td>
+                  <td><i class="fa fa-close"></i></td>
+                  <td><i class="fa fa-close"></i></td>
+                  <td><i class="fa fa-close"></i></td>
+                  <td><i class="fa fa-close"></i></td>
+                  <td><i class="fa fa-close"></i></td>
+                  <td><i class="fa fa-close"></i></td>
+                  <td><i class="fa fa-close"></i></td>
+                </tr>
+
+                <tr>
+                  <td class="text-center"><strong>C</strong> <br></td>
+                  <td><i class="fa fa-close"></i></td>
+                  <td><i class="fa fa-close"></i></td>
+                  <td><i class="fa fa-close"></i></td>
+                  <td><i class="fa fa-close"></i></td>
+                  <td><i class="fa fa-close"></i></td>
+                  <td><i class="fa fa-close"></i></td>
+                  <td><i class="fa fa-close"></i></td>
+                </tr>
+
+                <tr>
+                  <td class="text-center"><strong>D</strong> <br></td>
+                  <td><i class="fa fa-close"></i></td>
+                  <td><i class="fa fa-close"></i></td>
+                  <td><i class="fa fa-close"></i></td>
+                  <td><i class="fa fa-close"></i></td>
+                  <td><i class="fa fa-close"></i></td>
+                  <td><i class="fa fa-close"></i></td>
+                  <td><i class="fa fa-close"></i></td>
+                </tr>
+
+                <tr>
+                  <td class="text-center"><strong>E</strong> <br></td>
+                  <td><i class="fa fa-close"></i></td>
+                  <td><i class="fa fa-close"></i></td>
+                  <td><i class="fa fa-close"></i></td>
+                  <td><i class="fa fa-close"></i></td>
+                  <td><i class="fa fa-close"></i></td>
+                  <td><i class="fa fa-close"></i></td>
+                  <td><i class="fa fa-close"></i></td>
+                </tr>
+
+                <tr>
+                  <td class="text-center"><strong>F</strong> <br></td>
+                  <td><i class="fa fa-close"></i></td>
+                  <td><i class="fa fa-close"></i></td>
+                  <td><i class="fa fa-close"></i></td>
+                  <td><i class="fa fa-close"></i></td>
+                  <td><i class="fa fa-close"></i></td>
+                  <td><i class="fa fa-close"></i></td>
+                  <td><i class="fa fa-close"></i></td>
+                </tr>
+              </tbody>
+              <!-- <tfoot>
+                <tr>
+                  <th><a href="#"><i class="fa fa-long-arrow-left"></i> September</a></th>
+                  <th></th>
+                  <th></th>
+                  <th></th>
+                  <th></th>
+                  <th></th>
+                  <th><a href="#">November <i class="fa fa-long-arrow-right"></i></a></th>
+                </tr>
+              </tfoot> -->
+            </table>
+					</div>
+          <center>
+              <button onclick="getoutcome()" class="button" >開始分發</button>
+          </center>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<script src="js/jquery.min.js"></script>
+  <script src="js/popper.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/main.js"></script>
+
+	</body>
+</html>
+

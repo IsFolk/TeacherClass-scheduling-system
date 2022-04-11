@@ -1,0 +1,245 @@
+<!doctype html>
+<html lang="zh-tw">
+  <head>
+  	<title>分發系統</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,700' rel='stylesheet' type='text/css'>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <link rel="stylesheet" href="css/style.css">
+
+    <script src="/eel.js"></script>
+    <script src="func.js"></script>
+
+    <style>
+      .button {
+        background-color: #68c1d1;
+        border-color: black;
+        color: white;
+        padding: 10px 32px;
+        text-decoration: none;
+        margin: 4px 2px;
+        cursor: pointer;
+        border-radius: 5px;
+      }
+
+      .button:hover {opacity: 0.5;}
+
+      .button:active {
+        opacity: 1;
+        background-color:	#3c88b4;
+      }
+    </style>
+	</head>
+	<body>
+	<section class="ftco-section">
+		<div class="container">
+			<div class="row justify-content-center">
+				<div class="col-md-6 text-center mb-5">
+					<h2 class="heading-section">分發結果</h2>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12">
+					<div class="table-wrap">
+						<table class="table table-bordered text-center">
+              <thead>
+                <tr>
+                  <th></th>
+                  <th>一</th>
+                  <th>二</th>
+                  <th>三</th>
+                  <th>四</th>
+                  <th>五</th>
+                  <th>六</th>
+                  <th>日</th>
+                </tr>
+              </thead>
+              <tbody>
+
+                <tr>
+                  <td class="text-center"><strong>1</strong> <br></td>
+                  <td><p id="Mon1"></p></td>
+                  <td><p id="Tue1"></p></td>
+                  <td><p id="Wed1"></p></td>
+                  <td><p id="Thu1"></p></td>
+                  <td><p id="Fri1"></p></td>
+                  <td><p id="Sat1"></p></td>
+                  <td><p id="Sun1"></p></td>
+                </tr>
+
+                <tr>
+                  <td class="text-center"><strong>2</strong> <br></td>
+                  <td><p id="Mon2"></p></td>
+                  <td><p id="Tue2"></p></td>
+                  <td><p id="Wed2"></p></td>
+                  <td><p id="Thu2"></p></td>
+                  <td><p id="Fri2"></p></td>
+                  <td><p id="Sat2"></p></td>
+                  <td><p id="Sun2"></p></td>
+                </tr>
+                
+                <tr>
+                  <td class="text-center"><strong>3</strong> <br></td>
+                  <td><p id="Mon3"></p></td>
+                  <td><p id="Tue3"></p></td>
+                  <td><p id="Wed3"></p></td>
+                  <td><p id="Thu3"></p></td>
+                  <td><p id="Fri3"></p></td>
+                  <td><p id="Sat3"></p></td>
+                  <td><p id="Sun3"></p></td>
+                </tr>
+
+                <tr>
+                  <td class="text-center"><strong>4</strong> <br></td>
+                  <td><p id="Mon4"></p></td>
+                  <td><p id="Tue4"></p></td>
+                  <td><p id="Wed4"></p></td>
+                  <td><p id="Thu4"></p></td>
+                  <td><p id="Fri4"></p></td>
+                  <td><p id="Sat4"></p></td>
+                  <td><p id="Sun4"></p></td>
+                </tr>
+
+                <tr>
+                  <td class="text-center"><strong>5</strong> <br></td>
+                  <td><p id="Mon5"></p></td>
+                  <td><p id="Tue5"></p></td>
+                  <td><p id="Wed5"></p></td>
+                  <td><p id="Thu5"></p></td>
+                  <td><p id="Fri5"></p></td>
+                  <td><p id="Sat5"></p></td>
+                  <td><p id="Sun5"></p></td>
+                </tr>
+
+                <tr>
+                  <td class="text-center"><strong>6</strong> <br></td>
+                  <td><p id="Mon6"></p></td>
+                  <td><p id="Tue6"></p></td>
+                  <td><p id="Wed6"></p></td>
+                  <td><p id="Thu6"></p></td>
+                  <td><p id="Fri6"></p></td>
+                  <td><p id="Sat6"></p></td>
+                  <td><p id="Sun6"></p></td>
+                </tr>
+
+                <tr>
+                  <td class="text-center"><strong>7</strong> <br></td>
+                  <td><p id="Mon7"></p></td>
+                  <td><p id="Tue7"></p></td>
+                  <td><p id="Wed7"></p></td>
+                  <td><p id="Thu7"></p></td>
+                  <td><p id="Fri7"></p></td>
+                  <td><p id="Sat7"></p></td>
+                  <td><p id="Sun7"></p></td>
+                </tr>
+                <tr>
+                  <td class="text-center"><strong>8</strong> <br></td>
+                  <td><p id="Mon8"></p></td>
+                  <td><p id="Tue8"></p></td>
+                  <td><p id="Wed8"></p></td>
+                  <td><p id="Thu8"></p></td>
+                  <td><p id="Fri8"></p></td>
+                  <td><p id="Sat8"></p></td>
+                  <td><p id="Sun8"></p></td>
+                </tr>
+
+                <tr>
+                  <td class="text-center"><strong>9</strong> <br></td>
+                  <td><p id="Mon9"></p></td>
+                  <td><p id="Tue9"></p></td>
+                  <td><p id="Wed9"></p></td>
+                  <td><p id="Thu9"></p></td>
+                  <td><p id="Fri9"></p></td>
+                  <td><p id="Sat9"></p></td>
+                  <td><p id="Sun9"></p></td>
+                </tr>
+
+                <tr>
+                  <td class="text-center"><strong>A</strong> <br></td>
+                  <td><p id="MonA"></p></td>
+                  <td><p id="TueA"></p></td>
+                  <td><p id="WedA"></p></td>
+                  <td><p id="ThuA"></p></td>
+                  <td><p id="FriA"></p></td>
+                  <td><p id="SatA"></p></td>
+                  <td><p id="SunA"></p></td>
+                </tr>
+
+                <tr>
+                  <td class="text-center"><strong>B</strong> <br></td>
+                  <td><p id="MonB"></p></td>
+                  <td><p id="TueB"></p></td>
+                  <td><p id="WedB"></p></td>
+                  <td><p id="ThuB"></p></td>
+                  <td><p id="FriB"></p></td>
+                  <td><p id="SatB"></p></td>
+                  <td><p id="SunB"></p></td>
+                </tr>
+
+                <tr>
+                  <td class="text-center"><strong>C</strong> <br></td>
+                  <td><p id="MonC"></p></td>
+                  <td><p id="TueC"></p></td>
+                  <td><p id="WedC"></p></td>
+                  <td><p id="ThuC"></p></td>
+                  <td><p id="FriC"></p></td>
+                  <td><p id="SatC"></p></td>
+                  <td><p id="SunC"></p></td>
+                </tr>
+
+                <tr>
+                  <td class="text-center"><strong>D</strong> <br></td>
+                  <td><p id="MonD"></p></td>
+                  <td><p id="TueD"></p></td>
+                  <td><p id="WedD"></p></td>
+                  <td><p id="ThuD"></p></td>
+                  <td><p id="FriD"></p></td>
+                  <td><p id="SatD"></p></td>
+                  <td><p id="SunD"></p></td>
+                </tr>
+
+                <tr>
+                  <td class="text-center"><strong>E</strong> <br></td>
+                  <td><p id="MonE"></p></td>
+                  <td><p id="TueE"></p></td>
+                  <td><p id="WedE"></p></td>
+                  <td><p id="ThuE"></p></td>
+                  <td><p id="FriE"></p></td>
+                  <td><p id="SatE"></p></td>
+                  <td><p id="SunE"></p></td>
+                </tr>
+
+                <tr>
+                  <td class="text-center"><strong>F</strong> <br></td>
+                  <td><p id="MonF"></p></td>
+                  <td><p id="TueF"></p></td>
+                  <td><p id="WedF"></p></td>
+                  <td><p id="ThuF"></p></td>
+                  <td><p id="FriF"></p></td>
+                  <td><p id="SatF"></p></td>
+                  <td><p id="SunF"></p></td>
+                </tr>
+              </tbody>
+            </table>
+					</div>
+          <center>
+              <button onclick="test()" class="button" >開始分發</button>
+              <!-- <p id = "test">Test</p> -->
+          </center>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<script src="js/jquery.min.js"></script>
+  <script src="js/popper.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/main.js"></script>
+
+	</body>
+</html>
+
